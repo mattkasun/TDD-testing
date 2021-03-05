@@ -1,0 +1,21 @@
+{{define "layout"}}
+<!doctype html>
+<html>
+<head>
+<title>Application Name</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body onLoad="openTab('{{.Page}}')">
+{{template "buttonbar"}}
+{{template "home" . }}
+<!--{{template "expense" . }}
+{{template "income" . }}
+{{template "transaction" . }}
+{{template "category" . }}
+{{template "addexpense" . }}
+{{template "addincome" . }}
+{{template "script"}}-->
+</body>
+</html>
+{{end}}

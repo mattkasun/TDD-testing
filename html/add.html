@@ -1,0 +1,28 @@
+{{define "add"}}
+<!doctype html>
+    <head>
+        <title>Add</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="stylesheet/style.css">
+        <link rel="stylesheet" href="stylesheet/login.css">
+    </head>
+    <body>
+        <H1 style="text-align: center">Add a New Task</h1>
+        <div class="form" id="login">
+    <form action="/add" method=POST name="form-add">
+        <!-- <span class="fas fa-user"></span>  icons need updating -->
+    <input type=text name="taskName" required/>
+    <!--<span class="fas fa-lock"><span> -->
+    <input type="button" onclick="alert('Show Calendar to select due date')" value="Due Date">
+    <input type="button" onclick="alert('Show Project ')" value="Project">
+
+
+    <input type=submit value="Login" />
+  </form>
+</div>
+
+
+   </body>
+</html>
+{{end}}
